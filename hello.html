@@ -14,12 +14,12 @@
 	ReactDOM.render(
 		React.DOM.h1(
 		//utilizando o React.DOM acessando tags como <h1> do html podendo atribuir id's e vslores a essas tags
-		{
-			//aqui tenho um exemplo de um id adicionado por meio do React.DOM.h1()
-			id: "my-heading",
-		},
-		//aqui o value desse h1.
-		 "Hello World!"
+		{id: "my-heading"},
+
+		React.DOM.span(null, "Hello"),
+		
+		 "World!"
+		
 		 ),
 		//aqui acessando o id da DIV a qual minha aplicação é renderizada.
 		document.getElementById("app")

@@ -12,15 +12,13 @@
 	<script src="react/build/react-dom.js"></script>
 	<script>
 	ReactDOM.render(
+		////////// EXEMPLO ATRIBUINDO CLASS E FOR USANDO REACT 
 		React.DOM.h1(
-		//utilizando o React.DOM acessando tags como <h1> do html podendo atribuir id's e vslores a essas tags
-		{id: "my-heading"},
-		//Componentes Aninhados
-		React.DOM.span(null, 
-			React.DOM.em(null, "Hell"),
-			"o"
-			),
-		 "World!"
+			{
+				className: "pretty",
+				htmlFor: "me",
+			},
+			"Hello World!"
 		 ),
 		//aqui acessando o id da DIV a qual minha aplicação é renderizada.
 		document.getElementById("app")

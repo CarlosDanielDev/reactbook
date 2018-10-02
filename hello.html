@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hello React</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="app">
+		<!-- Aqui é Renderizada a Aplicação REACT! -->
+		</div>
+	<script src="react/build/react.js"></script>
+	<script src="react/build/react-dom.js"></script>
+	<script>
+	ReactDOM.render(
+		React.DOM.h1(
+		//utilizando o React.DOM acessando tags como <h1> do html podendo atribuir id's e vslores a essas tags
+		{
+			//aqui tenho um exemplo de um id adicionado por meio do React.DOM.h1()
+			id: "my-heading",
+		},
+		//aqui o value desse h1.
+		 "Hello World!"
+		 ),
+		//aqui acessando o id da DIV a qual minha aplicação é renderizada.
+		document.getElementById("app")
+		);
+	</script>
+	</body>
+</html>

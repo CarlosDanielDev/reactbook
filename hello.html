@@ -11,21 +11,15 @@
 	<script src="react/build/react.js"></script>
 	<script src="react/build/react-dom.js"></script>
 	<script>
-	ReactDOM.render(
-		////////// EXEMPLO ATRIBUINDO STYLE USANDO REACT
-		React.DOM.h1(
-			{
-				style:{
-					background: "black",
-					color: "white",
-					fontFamily: "Verdana",
-				}
-			},
-			"Hello World!"
-		 ),
-		//aqui acessando o id da DIV a qual minha aplicação é renderizada.
-		document.getElementById("app")
-		);
+		var Component = React.createClass({
+			render: function(){
+				return React.DOM.span(null, "I'm so Custom");
+			}
+		}); 
+		ReactDOM.render(
+				React.createElement(Component),
+				document.getElementById("app")
+			);
 	</script>
 	</body>
 </html>

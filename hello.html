@@ -15,9 +15,10 @@
 			render: function(){
 				return React.DOM.span(null, "I'm so Custom");
 			}
-		}); 
+		});
+		var ComponentFactory = React.createFactory(Component); 
 		ReactDOM.render(
-				React.createElement(Component),
+				ComponentFactory(),
 				document.getElementById("app")
 			);
 	</script>
